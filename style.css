@@ -17,11 +17,8 @@
   padding: 100px 100px;
 }
 
-.container{
-  background: blue;
+.item{
+  padding: 100px;
+  height: 100px;
 }
 
-#myCarousel {
-  display: block;
-  margin: auto;
-}
