@@ -55,7 +55,7 @@ h1{
 
   > .item {
     position: relative;
-    display: none;
+/*     display: none; */
     .transition(.6s ease-in-out left);
 
     // Account for jankitude on images
