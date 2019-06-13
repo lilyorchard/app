@@ -17,13 +17,105 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #FF6791;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+    <style>
     h1 {
       color: pink;
-      font-size: 55px;
-    }
-    
-    h2 {
-      color: hotpink;
       font-size: 55px;
     }
     
@@ -48,7 +140,24 @@
     }
     
     #yellow {
-      color: B#3364C;
+      color: #0091CC;
+    }
+    
+    #pink {
+      color:#B3364C;
+    }
+      
+    #blue {
+      background-color:#0091CC;  
+    }
+      
+    .w3-top {
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 24px;  
+    }
+      
+    #color {
+      color: #FFF761;
     }
     
 
@@ -72,7 +181,7 @@
 <div class="w3-top">
  <div class="w3-bar w3-theme-d2 w3-left-align">
   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <a href="#" class="w3-bar-item w3-button" id = "blue"><i class="fa fa-home w3-margin-right"></i>Home</a>
   <a href="#Mission" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Mission</a>
   <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
   <a href="#location" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Locations</a>
@@ -116,8 +225,143 @@
 </div>
     </div>
 
-
     
+    
+<h2 style="text-align:center">Statistics</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 10</div>
+    <img src="https://i.imgur.com/15WmbBa.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 10</div>
+    <img src="https://i.imgur.com/29DOX2P.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 10</div>
+    <img src="https://i.imgur.com/OpmEin6.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 10</div>
+    <img src="https://i.imgur.com/X3jeMeh.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 10</div>
+    <img src="https://i.imgur.com/8pnKBpW.png.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 10</div>
+    <img src="https://i.imgur.com/15WmbBa.png" style="width:100%">
+  </div>
+    
+   
+   <div class="mySlides">
+    <div class="numbertext">7 / 10</div>
+    <img src="https://i.imgur.com/29DOX2P.png" style="width:100%">
+  </div>
+  
+    <div class="mySlides">
+    <div class="numbertext">8 / 10</div>
+    <img src="https://i.imgur.com/OpmEin6.png" style="width:100%">
+  </div>
+  
+    <div class="mySlides">
+    <div class="numbertext">9 / 10</div>
+    <img src="https://i.imgur.com/X3jeMeh.png" style="width:100%">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">10 / 10</div>
+    <img src="https://i.imgur.com/8pnKBpW.png.jpg" style="width:100%">
+  </div> 
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://i.imgur.com/15WmbBa.png" style="width:100%" onclick="currentSlide(1)" alt="Based on the latest state-level data, approximately 879,000 abortions took place in the United States in 2017—down from approximately 892,000 abortions in 2016 and 913,000 abortions in 2015.
+">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.imgur.com/29DOX2P.png" style="width:100%" onclick="currentSlide(2)" alt="The abortion rate of non-metropolitan women is about half that of women who live in metropolitan counties (NAF).
+">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.imgur.com/OpmEin6.png" style="width:100%" onclick="currentSlide(3)" alt="Black women were more than 3.5 times more likely to have an abortion in 2015 than white women (CDC).
+">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.imgur.com/X3jeMeh.png" style="width:100%" onclick="currentSlide(4)" alt="On any given day 443,000 children are in foster care in the United States.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.imgur.com/8pnKBpW.png.jpg" style="width:100%" onclick="currentSlide(5)" alt="In 2017, more than 17,000 young people aged out of foster care without permanent families. Research has shown that those who leave care without being linked to forever families have a higher likelihood than youth in the general population to experience homelessness, unemployment and incarceration as adults.
+">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="https://i.imgur.com/15WmbBa.png" style="width:100%" onclick="currentSlide(6)" alt="45% of the 6.1 million pregnancies in the United States each year are unintended.
+">
+    </div>
+   <div class="column">
+      <img class="demo cursor" src="https://i.imgur.com/29DOX2P.png" style="width:100%" onclick="currentSlide(7)" alt="Unintended pregnancy rates are highest among low-income women.">
+    </div>
+
+<div class="column">
+      <img class="demo cursor" src="https://i.imgur.com/OpmEin6.png" style="width:100%" onclick="currentSlide(8)" alt="In 2011, women with incomes below 100% of poverty had an unplanned birth rate nearly seven times that of women at or above 200% of poverty.">
+    </div>
+    
+<div class="column">
+      <img class="demo cursor" src="https://i.imgur.com/X3jeMeh.png" style="width:100%" onclick="currentSlide(9)" alt="In 2010, the nationwide public investment in family planning services resulted in $13.6 billion in net savings from helping women avoid unintended pregnancies.">
+    </div>
+    
+    
+<div class="column">
+      <img class="demo cursor" src="https://i.imgur.com/8pnKBpW.png.jpg" style="width:100%" onclick="currentSlide(10)" alt="4.7 Million women younger than 20 years of age are in need of publicly funded family planning services.">
+    </div>
+    
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
 <!-- Container 
 <div class="w3-container" style="position:relative">
   <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
@@ -126,7 +370,7 @@
 
 <!-- Pricing Row -->
 <center><div class="w3-row-padding w3-center w3-padding-64" id="location">
-    <h2>Women's Health Care Clinics Near You</h2>
+    <h2 id = "pink">Women's Health Care Clinics Near You</h2>
     <p>Check out up-to-date locations for healthcre clinics for women!</p><br>
 </div></center>
 
@@ -185,17 +429,17 @@
 </div>
   
 <!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center w3-opacity">
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center w3-opacity" id = "font">
   <h4>Follow Us</h4>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
-  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <a class="w3-button w3-large" id = "color" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large" id = "color" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large" id = "color" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large" id = "color" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-hide-small" id = "color" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 
   <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+    <span class="w3-text w3-padding w3-hide-small" id = "color">Go To Top</span>
     <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
     <i class="fa fa-chevron-circle-up"></i></span></a>
   </div>
