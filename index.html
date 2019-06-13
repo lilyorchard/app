@@ -95,12 +95,15 @@ img {
   content: "";
   display: table;
   clear: both;
+  
+  
 }
 
 /* Six columns side by side */
 .column {
-  float: left;
   width: 16.66%;
+  padding: 5px;
+  display: inline-block;
 }
 
 /* Add a transparency effect for thumnbail images */
@@ -178,7 +181,12 @@ img {
       #divdiv {
         font-family: 'Open Sans Condensed', sans-serif;
         font-size: 24px; 
-        display: inline-block;
+      }
+      
+      #size {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 24px; 
+        padding: 15px;
       }
       
     
@@ -209,11 +217,13 @@ img {
   <a href="#location" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Locations</a>
   <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Meet the Team</a>
     <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>
-    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+    <button class="w3-button" title="Notifications">Resources <i class="fa fa-caret-down"></i></button>
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block" id = "size">
       <a href="https://www.plannedparenthood.org<">Planned Parenthood</a><br>
       <a href="https://www.thesexed.com<">Sexual Education</a><br>
-      <a href="https://roo.plannedparenthood.org/onboarding/step-4">Anonymous Messenger</a>
+      <a href="https://roo.plannedparenthood.org/onboarding/step-4">Anonymous Messenger</a><br>
+      <a href="https://www.usa.gov/register-to-vote">Register to Vote</a><br>
+  
     </div>
   </div>
  </div>
@@ -245,15 +255,56 @@ img {
 </div>
     
     
+
 <div class="w3-container w3-padding-64 w3-theme-l5" id = "divdiv">  
   <h2 style="text-align:center" id = "blue-who">Statistics</h2>
   <center><h3>
     Click through the different colors below the slideshow to view some statistics about issues concerning women's health care.
   </h3></center><br>
 
+  
+  <div class="row" class = "slideshow">
+    <div class="column">
+      <img class="demo cursor" src="https://i.imgur.com/15WmbBa.png" style="width:100%" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.imgur.com/29DOX2P.png" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.imgur.com/OpmEin6.png" style="width:100%" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.imgur.com/X3jeMeh.png" style="width:100%" onclick="currentSlide(4)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.imgur.com/8pnKBpW.png.jpg" style="width:100%" onclick="currentSlide(5)">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="https://i.imgur.com/15WmbBa.png" style="width:100%" onclick="currentSlide(6)">
+    </div>
+   <div class="column">
+      <img class="demo cursor" src="https://i.imgur.com/29DOX2P.png" style="width:100%" onclick="currentSlide(7)">
+    </div>
+
+<div class="column" class = "slideshow">
+      <img class="demo cursor" src="https://i.imgur.com/OpmEin6.png" style="width:100%" onclick="currentSlide(8)">
+    </div>
+    
+<div class="column" class = "slideshow">
+      <img class="demo cursor" src="https://i.imgur.com/X3jeMeh.png" style="width:100%" onclick="currentSlide(9)">
+    </div>
+    
+<div class="column" "slideshow">
+      <img class="demo cursor" src="https://i.imgur.com/8pnKBpW.png.jpg" style="width:100%" onclick="currentSlide(10)">
+    </div>
+    
+  </div>
+</div>
+  
+  
   <div class="mySlides">
     <div class="numbertext">1 / 10</div>
-    <img src="https://cdn.glitch.com/cf587f71-e154-47e7-bda8-10c21047feb8%2FSLide%201.png?v=1560455188111" style="width:50%">
+    <img src="https://cdn.glitch.com/cf587f71-e154-47e7-bda8-10c21047feb8%2FSLide%201.png?v=1560455188111" style="width:100%">
   </div>
 
   <div class="mySlides">
@@ -309,43 +360,7 @@ img {
     <p id="caption"></p>
   </div>
 
-  <div class="row" id = "slideshow">
-    <div class="column">
-      <img class="demo cursor" src="https://i.imgur.com/15WmbBa.png" style="width:50%" onclick="currentSlide(1)">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="https://i.imgur.com/29DOX2P.png" style="width:50%" onclick="currentSlide(2)">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="https://i.imgur.com/OpmEin6.png" style="width:50%" onclick="currentSlide(3)">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="https://i.imgur.com/X3jeMeh.png" style="width:50%" onclick="currentSlide(4)">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="https://i.imgur.com/8pnKBpW.png.jpg" style="width:50%" onclick="currentSlide(5)">
-    </div>    
-    <div class="column">
-      <img class="demo cursor" src="https://i.imgur.com/15WmbBa.png" style="width:50%" onclick="currentSlide(6)">
-    </div>
-   <div class="column">
-      <img class="demo cursor" src="https://i.imgur.com/29DOX2P.png" style="width:50%" onclick="currentSlide(7)">
-    </div>
-
-<div class="column" id = "slideshow">
-      <img class="demo cursor" src="https://i.imgur.com/OpmEin6.png" style="width:50%" onclick="currentSlide(8)">
-    </div>
-    
-<div class="column" id = "slideshow">
-      <img class="demo cursor" src="https://i.imgur.com/X3jeMeh.png" style="width:50%" onclick="currentSlide(9)">
-    </div>
-    
-<div class="column" id = "slideshow">
-      <img class="demo cursor" src="https://i.imgur.com/8pnKBpW.png.jpg" style="width:50%" onclick="currentSlide(10)">
-    </div>
-    
-  </div>
-</div>
+  
 
 <script>
 var slideIndex = 1;
