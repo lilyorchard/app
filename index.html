@@ -121,6 +121,7 @@ img {
     
     #Mission, h1, h2 {
       font-family: "Dominique";
+      font-size: 55px;
     }
     
     h3 {
@@ -159,6 +160,20 @@ img {
     #color {
       color: #FFF761;
     }
+      
+    #font, h4 {
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 24px;
+    }
+      
+      #blue-who {
+        color: #FF6682;
+      }
+      
+      #contact {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 24px;  
+      }
     
 
     </style>
@@ -210,7 +225,7 @@ img {
 
 <!-- Image Header -->
 <div class="w3-display-container w3-animate-opacity">
-  <img src="https://www.youngjudaea.org/wp-content/uploads/2018/11/womens_health_rights.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;" class = "legend">
+  <img src = "https://broadly-images.vice.com/images/articles/meta/2016/06/23/what-inconsistent-birth-control-does-to-your-body-1466642136.png" alt="boat" style="width:100%;min-height:350px;max-height:600px;" class = "legend">
 
 </div>
     
@@ -221,13 +236,13 @@ img {
    Our Mission
    </h1>
    <center><h3>Here at INSERT NAME HERE, we want to help you make the best decision for you and your family. Regardless of your political or religious views, our goal is to help you make an educated decision. While we hope to provide an expansive collection of data to aid you, we are not medical professionals. Please speak with your physician before making any medical decisons.</h3></center><br>
-     <br>
 </div>
-    </div>
+    
 
     
     
-<h2 style="text-align:center">Statistics</h2>
+<div>
+  <h2 style="text-align:center" class= "w3-container w3-padding-64 w3-theme-l5" id = "blue-who">Statistics</h2>
 
 <div class="container">
   <div class="mySlides">
@@ -362,6 +377,7 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
+    </div>
 <!-- Container 
 <div class="w3-container" style="position:relative">
   <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
@@ -371,7 +387,7 @@ function showSlides(n) {
 <!-- Pricing Row -->
 <center><div class="w3-row-padding w3-center w3-padding-64" id="location">
     <h2 id = "pink">Women's Health Care Clinics Near You</h2>
-    <p>Check out up-to-date locations for healthcre clinics for women!</p><br>
+    <p>Check out up-to-date locations for health care clinics for women!</p><br>
 </div></center>
 
 
@@ -439,7 +455,7 @@ function showSlides(n) {
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 
   <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-hide-small" id = "color">Go To Top</span>
+    <span class="w3-text w3-padding w3-hide-small">Go To Top</span>
     <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
     <i class="fa fa-chevron-circle-up"></i></span></a>
   </div>
