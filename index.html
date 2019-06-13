@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script> 
+    $(function(){
+      $("#includedContent").load("test.html"); 
+    });
+    </script> 
   <title>Info CentHER</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -210,6 +215,7 @@ img {
       font-size: 30px;
     }
 
+
 </style>
 </head>
   <body id="myPage">
@@ -263,6 +269,8 @@ img {
   <img src = "https://cdn.glitch.com/cf587f71-e154-47e7-bda8-10c21047feb8%2FinfoCentHERLogo.png?v=1560456839956" alt="boat" style="width:100%;min-height:350px;max-height:600px;" class = "legend">
 
 </div>
+    
+    <div id="includedContent"></div>
     
     
 <!-- Mission Container --> 
@@ -542,6 +550,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </body>
     
 </html>
